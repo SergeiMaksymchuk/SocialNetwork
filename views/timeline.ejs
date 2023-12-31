@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<section class="timelineSection">
+    <h2>Tijdlijn</h2>
+    <% if (profile) { %>
+      <div class="profileInfo">
+        <img src="<%= profile.picture %>" alt="<%= profile.name %>">
+        <h3><%= profile.name %></h3>
+        <p>E-mail: <%= profile.email %></p>
+        <p>Beschrijving: <%= profile.description %></p>
+      </div>
+    <% } %>
+    <div class="formTimeline">
+      <form method="post" action="/postMessage">
+        <label for="contents">Plaats een nieuw bericht:</label> <br>
+        <textarea id="contents" name="contents" rows="4" required></textarea> <br>
+        <button type="submit">Plaatsen</button>
+      </form>
+    </div>
+    <ul class="messagesList">
+      <% messages.forEach((message) => { %>
+        <li class="messageItem">
+          <p><%= message.username %>:</p>
+          <p><%= message.contents %></p>
+        </li>
+      <% }); %>
+    </ul>
+  </section>
+<%- include("partials/footer") %>

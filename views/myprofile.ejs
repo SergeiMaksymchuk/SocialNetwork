@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<section class="profileSection">
+  <% if (profile) { %>
+    <h2>Mijn Profiel</h2>
+    <form method="post" action="/saveProfile">
+      <p>Gebruikersnaam: <%= profile.name%></p>
+      <p>e-mail: <%= profile.email %></p>
+      <img src="<%= profile.picture%>"> <br>
+      <label for="picture">URL van de foto:</label>
+      <input type="text" name="picture"> <br>
+      <label for="description">Beschrijving:</label>
+      <textarea id="description" name="description" rows="4"><%= profile.description %></textarea>
+      <br>
+      <button type="submit">Opslaan</button>
+    </form>
+  <% } %>
+</section>
+
+<%- include('partials/footer') %>

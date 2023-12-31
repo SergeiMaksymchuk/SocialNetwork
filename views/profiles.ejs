@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<h2>Profielen</h2>
+<ul class="profile_ul">
+  <% profiles.forEach((profile) =>{  %>
+    <li class="Profile_li">
+      <img src="<%= profile.picture %>" alt="<%= profile.name %>">
+      <h3><%= profile.name %></h3>
+      <p>Email: <%= profile.email %></p>
+      <p>Beschrijving: <%= profile.description %></p>
+
+      <% if (userId && friendships && friendships.find(friendship => friendship.id === profile.id)) { %>
+        <p>(Bevriend)</p>
+      <% } else if (userId !== profile.id) { %>
+        <form method="post" action="/addFriend/<%= profile.id %>">
+          <button class="profile_button" type="submit">Voeg toe als vriend</button>
+        </form>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
+<%- include('partials/footer') %>

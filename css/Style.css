@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+/*header*/
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+header section {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 100px;
+    height: auto;
+}
+header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+header ul {
+    padding: 10px;
+    display: flex;
+}
+header li {
+    font-size: 18px;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+header a:hover {
+    color: #ffd700;
+}
+header li:not(:last-child) {
+    margin-right: 20px;
+}
+header li:last-child {
+    margin-left: auto;
+}
+/*Profiles.ejs*/
+
+.profile_ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Profile_li {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #222;
+    box-shadow: 0 2px 4px black;
+  }
+  .Profile_li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #444;
+  }
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #ccc;
+  }
+  .profile_button {
+    background-color: #071630;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  /*myprofile.ejs*/
+
+  .profileSection {
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+  }
+  .profileSection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .profileSection p {
+    margin: 10px;
+  }
+  .profileSection form {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileSection img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .profileSection label {
+    margin-top: 10px;
+  }
+  .profileSection input,
+  .profileSection textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .profileSection button {
+    padding: 10px;
+    background-color: #071630;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .profileSection button:hover {
+    background-color: #051126;
+  }
+  /*timeline.ejs*/
+
+  .timelineSection {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  .profileInfo {
+    margin-bottom: 20px;
+  }
+  .profileInfo img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  .profileInfo h3 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .profileInfo p {
+    font-size: 14px;
+    color: #fff;
+    margin: 5px 0;
+  }
+  .formTimeline {
+    margin-bottom: 20px;
+  }
+  .formTimeline form {
+    display: flex;
+    flex-direction: column;
+  }
+  .formTimeline label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .formTimeline textarea {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #051126;
+    border-radius: 4px;
+  }
+  .formTimeline button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #071630;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  .messagesList {
+    padding: 0;
+  }
+  .messageItem {
+    margin-bottom: 15px;
+    background-color: #001f3f;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+  }
+  .messageItem p:nth-child(1) {
+    font-weight: bold;
+    font-size: 16px;
+    color: #39cccc;
+  }
+  .messageItem p {
+    font-size: 14px;
+    color: #7fdbff;
+    margin: 5px 0;
+  }
+  /*login.ejs*/
+
+  .loginSection {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+  }
+  .loginSection h2 {
+    color: #fff;
+  }
+  .loginSection form {
+    margin-top: 20px;
+  }
+  .loginSection label {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .loginSection input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .loginSection button {
+    background-color: #071630;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .loginSection button:hover {
+    background-color: #051126;
+  }
+  /*footer*/
+
+  footer {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
